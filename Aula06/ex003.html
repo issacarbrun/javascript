@@ -17,12 +17,12 @@
     <h1>Hello World</h1>
     <p>Massa muleco</p>
     <script>
-        var nome = window.prompt("Seu nome..."); //Armazenando informação dentro da variável
-        window.alert("Olá, sr(a) " + nome);
-        var num_in = window.prompt("Insira um numero: ");
-        var num_add = 2;
-        var soma = num_add + num_in
-        window.alert("Soma de " + num_in + " + " + num_add + " = " + soma)
+        var num_in = Number(window.prompt("Insira um numero: "));
+        var num_add = Number(window.prompt("Insira outro numero: "));
+        var soma = num_add + num_in;
+        console.log(soma);
+
+        window.alert(`A some entre ${num_add} e ${num_in}`)
     </script>
 </body>
 </html>
