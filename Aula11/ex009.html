@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfandega</title>
+</head>
+<body>
+    <h1>Sistema Alfandegário</h1>
+    Informe o seu pais: <input type="text" name="txtpais" id="txtpais"> 
+    <input type="button" value="Validar" onclick="status()">
+
+    <div id='res'>
+
+    </div>
+    <script>
+        function status(){
+            var country = document.querySelector('input#txtpais');
+            var res = document.querySelector('div#res')
+            if(country.value == 'Brasil')
+            {
+                res.innerHTML = `Você mora em ${country.value}`
+                res.innerHTML += `<br>Você é Brasileiro(a)</br>`
+            }
+            else{
+                res.innerHTML = `Você mora em ${country.value}`
+                res.innerHTML += `<br>Você é Estrangeiro</br>`                
+            }
+        }
+    </script>
+</body>
+</html>
